@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<body>
+    <div class="emi-holder">
+        <div class="calculator card">
+            <h1>Emi Calculator</h1>
+            <form action="">
+                <div class="block">
+                    <h3>Loan Amount</h3>
+                    <input type="number" name="amount" id="amount">
+                </div>
+
+                <div class="block">
+                    <h3>Interest</h3>
+                    <input type="number" name="ir" id="ir">
+                </div>
+
+                <div class="block">
+                    <h3>Time(year)</h3>
+                    <input type="number" name="time" id="time">
+                </div>
+
+                <div class="button">
+                    <button class="btn" id="find">Find Emi</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="results card">
+            <h1>Results</h1>
+            <h3>Total Emi: <span class="emi"></span></h3>
+            <h3>Total Interest : <span class="totalInt"></span></h3>
+            <h3>Total Amount: <span class="totalAmount"></span></h3>
+            <div id="chartContainer" style="height: 300px; width:100%">
+
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
